@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "Viewfast Preview",
+  "description": "Visualização mobile da página atual em painel lateral",
+  "version": "1.0.0",
+
+  "permissions": [
+    "sidePanel", 
+    "tabs", 
+    "declarativeNetRequest"
+  ],
+  "host_permissions": ["<all_urls>"],
+
+  "background": {
+    "service_worker": "background.js"
+  },
+
+  "action": {
+    "default_title": "Mobile Preview"
+  },
+
+  "side_panel": {
+    "default_path": "panel.html"
+  },
+
+  "icons": {
+    "16": "icons/icon.png",
+    "48": "icons/icon.png",
+    "128": "icons/icon.png"
+  }
+}
+
