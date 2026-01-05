@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Viewfast Preview</title>
+  <link rel="stylesheet" href="panel.css" />
+</head>
+<body>
+
+  <!-- Barra de navegação -->
+  <div class="navbar">
+    <!-- Botão de atualizar à esquerda -->
+    <button id="refreshBtn">
+      <img src="icons/refresh.png" alt="Atualizar" />
+    </button>
+    
+    <!-- Campo de URL -->
+    <input type="text" id="urlInput" placeholder="Search..." />
+    
+    <!-- Botão de pesquisa (lupa) à direita -->
+    <button id="searchBtn">
+      <img src="icons/search.png" alt="Pesquisar" />
+    </button>
+  </div>
+
+  <!-- Container do dispositivo com o iframe -->
+  <div class="device-container">
+    <iframe id="mobileFrame"></iframe>
+  </div>
+
+  <script src="panel.js"></script>
+</body>
+</html>
